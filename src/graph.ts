@@ -47,7 +47,7 @@ export class GraphRenderer {
       this.drawIntersection(intersection, maxMiles, paddedMinCost, paddedMaxCost, graphWidth, graphHeight);
     }
 
-    this.drawLegend(width);
+    this.drawLegend(width, height);
   }
 
   private drawAxes(width: number, height: number): void {
@@ -178,9 +178,9 @@ export class GraphRenderer {
     this.ctx.stroke();
   }
 
-  private drawLegend(width: number): void {
+  private drawLegend(width: number, height: number): void {
     const legendX = width - this.padding - 120;
-    const legendY = this.padding + 20;
+    const legendY = height - this.padding - 50;
 
     this.ctx.fillStyle = '#003478';
     this.ctx.fillRect(legendX, legendY, 30, 4);
