@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vehicle Cost Comparison</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>🚗 Vehicle Cost Comparison</h1>
+      <div class="subtitle">
+        Compare two vehicles to find the break-even point
+      </div>
+
+      <div class="vehicles-container">
+        <div class="vehicle-section vehicle1">
+          <div class="vehicle-title">Vehicle 1</div>
+          <div class="input-group">
+            <label for="vehicleCost1">Vehicle Cost ($):</label>
+            <input
+              type="number"
+              id="vehicleCost1"
+              value="17000"
+              min="0"
+              step="100"
+            />
+          </div>
+          <div class="input-group">
+            <label for="fuelEconomy1">Fuel Economy (MPG):</label>
+            <input
+              type="number"
+              id="fuelEconomy1"
+              value="12"
+              min="1"
+              step="0.1"
+            />
+          </div>
+          <div class="input-group">
+            <label for="gasCost1">Gas Cost ($/gal):</label>
+            <input
+              type="number"
+              id="gasCost1"
+              value="3.20"
+              min="0"
+              step="0.01"
+            />
+          </div>
+        </div>
+
+        <div class="vehicle-section vehicle2">
+          <div class="vehicle-title">Vehicle 2</div>
+          <div class="input-group">
+            <label for="vehicleCost2">Vehicle Cost ($):</label>
+            <input
+              type="number"
+              id="vehicleCost2"
+              value="50000"
+              min="0"
+              step="100"
+            />
+          </div>
+          <div class="input-group">
+            <label for="fuelEconomy2">Fuel Economy (MPG):</label>
+            <input
+              type="number"
+              id="fuelEconomy2"
+              value="30"
+              min="1"
+              step="0.1"
+            />
+          </div>
+          <div class="input-group">
+            <label for="gasCost2">Gas Cost ($/gal):</label>
+            <input
+              type="number"
+              id="gasCost2"
+              value="3.50"
+              min="0"
+              step="0.01"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="miles-input">
+        <div class="input-group">
+          <label for="milesDriven">Total Miles to Compare:</label>
+          <input
+            type="number"
+            id="milesDriven"
+            value="300000"
+            min="500"
+            step="500"
+          />
+        </div>
+        <div class="input-group">
+          <label for="milesPerYear">Miles Driven Per Year:</label>
+          <input
+            type="number"
+            id="milesPerYear"
+            value="15000"
+            min="1000"
+            step="1000"
+          />
+        </div>
+      </div>
+
+      <button>Compare Vehicles</button>
+
+      <div class="result-section" id="resultSection">
+        <div id="intersectionInfo"></div>
+
+        <div class="comparison-summary">
+          <div class="summary vehicle1">
+            <div class="summary-title">Vehicle 1 Summary</div>
+            <div id="summary1"></div>
+          </div>
+          <div class="summary vehicle2">
+            <div class="summary-title">Vehicle 2 Summary</div>
+            <div id="summary2"></div>
+          </div>
+        </div>
+
+        <canvas id="graphCanvas"></canvas>
+      </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
