@@ -40,8 +40,8 @@ export class GraphRenderer {
 
     this.drawAxes(width, height);
     this.drawGrid(width, height, graphWidth, graphHeight, maxMiles, paddedMinCost, paddedMaxCost, milesPerYear);
-    this.drawLine(v1Data, maxMiles, paddedMinCost, paddedMaxCost, graphWidth, graphHeight, '#667eea');
-    this.drawLine(v2Data, maxMiles, paddedMinCost, paddedMaxCost, graphWidth, graphHeight, '#f59e0b');
+    this.drawLine(v1Data, maxMiles, paddedMinCost, paddedMaxCost, graphWidth, graphHeight, '#003478');
+    this.drawLine(v2Data, maxMiles, paddedMinCost, paddedMaxCost, graphWidth, graphHeight, '#EB0A1E');
     
     if (intersection) {
       this.drawIntersection(intersection, maxMiles, paddedMinCost, paddedMaxCost, graphWidth, graphHeight);
@@ -182,14 +182,14 @@ export class GraphRenderer {
     const legendX = width - this.padding - 120;
     const legendY = this.padding + 20;
 
-    this.ctx.fillStyle = '#667eea';
+    this.ctx.fillStyle = '#003478';
     this.ctx.fillRect(legendX, legendY, 30, 4);
     this.ctx.fillStyle = '#333';
     this.ctx.font = '14px Arial';
     this.ctx.textAlign = 'left';
     this.ctx.fillText('Vehicle 1', legendX + 40, legendY + 4);
 
-    this.ctx.fillStyle = '#f59e0b';
+    this.ctx.fillStyle = '#EB0A1E';
     this.ctx.fillRect(legendX, legendY + 25, 30, 4);
     this.ctx.fillStyle = '#333';
     this.ctx.fillText('Vehicle 2', legendX + 40, legendY + 29);

@@ -6,7 +6,7 @@
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #1565C0 0%, #42A5F5 35%, #E3F2FD 65%, #FFFFFF 100%);
   min-height: 100vh;
   padding: 20px;
 }
@@ -49,11 +49,11 @@ h1 {
 }
 
 .vehicle-section.vehicle1 {
-  border-color: #667eea;
+  border-color: #003478;
 }
 
 .vehicle-section.vehicle2 {
-  border-color: #f59e0b;
+  border-color: #EB0A1E;
 }
 
 .vehicle-title {
@@ -64,11 +64,11 @@ h1 {
 }
 
 .vehicle1 .vehicle-title {
-  color: #667eea;
+  color: #003478;
 }
 
 .vehicle2 .vehicle-title {
-  color: #f59e0b;
+  color: #EB0A1E;
 }
 
 .input-group {
@@ -107,7 +107,7 @@ input[type="number"]:focus {
 button {
   width: 100%;
   padding: 15px;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #1a5f2e 0%, #2d7a3e 50%, #3d9965 100%);
   color: white;
   border: none;
   border-radius: 8px;
@@ -119,7 +119,7 @@ button {
 
 button:hover {
   transform: translateY(-2px);
-  box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+  box-shadow: 0 5px 20px rgba(26, 95, 46, 0.4);
 }
 
 button:active {
@@ -150,11 +150,11 @@ button:active {
 }
 
 .summary.vehicle1 {
-  border-color: #667eea;
+  border-color: #003478;
 }
 
 .summary.vehicle2 {
-  border-color: #f59e0b;
+  border-color: #EB0A1E;
 }
 
 .summary-title {
@@ -165,11 +165,11 @@ button:active {
 }
 
 .summary.vehicle1 .summary-title {
-  color: #667eea;
+  color: #003478;
 }
 
 .summary.vehicle2 .summary-title {
-  color: #f59e0b;
+  color: #EB0A1E;
 }
 
 .summary-item {
